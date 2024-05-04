@@ -3,6 +3,10 @@
 [<img src= "./screenshots/ios.png" width="200">]()
 [<img src= "./screenshots/android.png" width="200">]()
 
+Youtube Video exmplainer:
+
+[<img src="https://github.com/realityexpander/KMP_Room/assets/5157474/5ff980a9-11c5-4d9e-9546-745ccb0006d7">](https://youtu.be/2E-3FDRPmYI)
+
 Room for Kotlin Multi-Platform: https://developer.android.com/kotlin/multiplatform/room#setting-dependencies
 
 Based on this repo: https://github.com/android/kotlin-multiplatform-samples/tree/main/Fruitties
