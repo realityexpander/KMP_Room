@@ -3,9 +3,12 @@
 [<img src= "./screenshots/ios.png" width="200">]()
 [<img src= "./screenshots/android.png" width="200">]()
 
+Room for Kotlin Multi-Platform: https://developer.android.com/kotlin/multiplatform/room#setting-dependencies
+
 Based on this repo: https://github.com/android/kotlin-multiplatform-samples/tree/main/Fruitties
 
-
+## Original Document:
+Project generated from this template (iOS & Android, Shared UI): https://kmp.jetbrains.com/
 
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
