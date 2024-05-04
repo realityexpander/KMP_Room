@@ -1,5 +1,7 @@
 # KMP using Room for iOS and Android
 
+How to use Google Room database (loved by Android devs) in Compose KMP apps for iOS and Android (No Viewmodels!)
+
 [<img src= "./screenshots/ios.png" width="200">]()
 [<img src= "./screenshots/android.png" width="200">]()
 
