@@ -1,4 +1,4 @@
-# KMP sample project using Room for iOS and Android
+# KMP using Room for iOS and Android
 
 [<img src= "./screenshots/ios.png" width="200">]()
 [<img src= "./screenshots/android.png" width="200">]()
