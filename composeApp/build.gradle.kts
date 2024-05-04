@@ -1,5 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
@@ -27,9 +25,6 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
             isStatic = true
-
-            // Required when using NativeSQLiteDriver for Room
-            //linkerOpts.add("-lsqlite3")
         }
     }
     sourceSets.all {
@@ -38,13 +33,6 @@ kotlin {
     
     sourceSets {
 
-        androidMain.dependencies {
-            implementation(libs.compose.ui.tooling.preview)
-            implementation(libs.androidx.activity.compose)
-
-            // Room
-            implementation(libs.androidx.room.paging)
-        }
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -58,8 +46,15 @@ kotlin {
             implementation(libs.androidx.room.runtime)
             implementation(libs.sqlite.bundled)
         }
-        iosMain.dependencies {
+        androidMain.dependencies {
+            implementation(libs.compose.ui.tooling.preview)
+            implementation(libs.androidx.activity.compose)
 
+            // Room
+            implementation(libs.androidx.room.paging)
+        }
+        iosMain.dependencies {
+            // Intentionally left blank
         }
     }
 }
@@ -96,11 +91,13 @@ android {
     dependencies {
         debugImplementation(libs.compose.ui.tooling)
 
+        // Room
         implementation(libs.androidx.paging.compose.android)
     }
 }
 
 dependencies {
+    // Room
     add("kspAndroid", libs.androidx.room.compiler)
     add("kspIosSimulatorArm64", libs.androidx.room.compiler)
     add("kspIosX64", libs.androidx.room.compiler)

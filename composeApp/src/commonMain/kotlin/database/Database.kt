@@ -1,5 +1,7 @@
 package database
 
+import androidx.compose.runtime.CompositionLocalContext
+import androidx.compose.runtime.ProvidableCompositionLocal
 import androidx.room.Dao
 import androidx.room.Database
 import androidx.room.Entity
@@ -20,12 +22,18 @@ abstract class AppDatabase : RoomDatabase() {
   abstract fun getDao(): TodoDao
 }
 
+@Entity
+data class TodoEntity(
+  @PrimaryKey(autoGenerate = true) val id: Long = 0,
+  val title: String,
+  val content: String
+)
+
 @Dao
 interface TodoDao {
   @Insert
   suspend fun insert(item: TodoEntity)
 
-  // Delete all
   @Query("DELETE FROM TodoEntity")
   suspend fun deleteAll()
 
@@ -36,28 +44,13 @@ interface TodoDao {
   fun getAllAsFlow(): Flow<List<TodoEntity>>
 }
 
-@Entity
-data class TodoEntity(
-  @PrimaryKey(autoGenerate = true) val id: Long = 0,
-  val title: String,
-  val content: String
-)
-
 fun getRoomDatabase(
   builder: RoomDatabase.Builder<AppDatabase>
 ): AppDatabase {
 
-  class Migration1To2 : Migration(1, 2) {
-    override fun migrate(connection: SQLiteConnection) {
-      connection.execSQL("ALTER TABLE TodoEntity ADD COLUMN content TEXT NOT NULL DEFAULT ''")
-    }
-  }
-
   return builder
-    .addMigrations(Migration1To2())
     .fallbackToDestructiveMigrationOnDowngrade(true)
     .setDriver(BundledSQLiteDriver())
     .setQueryCoroutineContext(Dispatchers.IO)
     .build()
 }
-
