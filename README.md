@@ -1,6 +1,7 @@
 # KMP sample project using Room for iOS and Android
 
 [<img src= "./screenshots/ios.png" width="200">]()
+[<img src= "./screenshots/android.png" width="200">]()
 
 Based on this repo: https://github.com/android/kotlin-multiplatform-samples/tree/main/Fruitties
 
