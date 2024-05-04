@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.0"
+agp = "8.2.2"
 android-compileSdk = "34"
 android-minSdk = "24"
 android-targetSdk = "34"
@@ -8,11 +8,12 @@ compose = "1.6.7"
 compose-plugin = "1.6.2"
 kotlin = "1.9.23"
 
+#Room
+androidx-room = "2.7.0-alpha01"
+ksp = "1.9.23-1.0.19"
 sqlite = "2.5.0-SNAPSHOT"
 pagingComposeAndroid = "3.3.0-rc01"
-androidx-room = "2.7.0-alpha01"
 androidx-paging = "3.3.0-rc01"
-ksp = "1.9.23-1.0.19"
 
 
 [libraries]
@@ -20,6 +21,7 @@ androidx-activity-compose = { module = "androidx.activity:activity-compose", ver
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 
+#Room
 androidx-paging-common = { module = "androidx.paging:paging-common", version.ref = "androidx-paging" }
 androidx-paging-compose-android = { group = "androidx.paging", name = "paging-compose-android", version.ref = "pagingComposeAndroid" }
 androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidx-room" }
@@ -33,5 +35,6 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 
+#Room
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 room = { id = "androidx.room", version.ref = "androidx-room" }
