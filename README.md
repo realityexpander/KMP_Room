@@ -1,3 +1,11 @@
+# KMP sample project using Room for iOS and Android
+
+[<img src= "./screenshots/ios.png" width="200">]()
+
+Based on this repo: https://github.com/android/kotlin-multiplatform-samples/tree/main/Fruitties
+
+
+
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
