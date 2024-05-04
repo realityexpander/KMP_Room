@@ -14,7 +14,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         val databaseBuilder = getDatabaseBuilderAndroid(this)
-
         setContent {
             App(databaseBuilder)
         }
