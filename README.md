@@ -1,4 +1,5 @@
-# KMP Compose UI App using Google's Room Database for iOS and Android
+# KMP (Kotlin Multi-Platform) Compose UI App using Google's Room Database for iOS and Android
+
 
 How to use Google Room database (loved by Android devs) in Pure Compose UI KMP apps for iOS and Android 
 - Attempting to use the simplest implementation possible.
