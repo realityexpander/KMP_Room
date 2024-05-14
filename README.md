@@ -2,7 +2,7 @@
 
 
 How to use Google Room database (loved by Android devs) in Pure Compose UI KMP apps for iOS and Android 
-- Attempting to use the simplest implementation possible.
+- Attempting to use the simplest implementation possible to show the minimal code needed.
 - No Viewmodels! Pure Compose-only app.
 
 [<img src= "./screenshots/ios.png" width="200">]()
