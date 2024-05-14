@@ -5,6 +5,8 @@ How to use Google Room database (loved by Android devs) in Pure Compose UI KMP a
 - Attempting to use the simplest implementation possible to show the minimal code needed.
 - No Viewmodels! Pure Compose-only app.
 
+- > ### $\textcolor{yellow}{Please\ consider\ giving\ me\ a\ STAR\ as\ THANKS!\ ⭐️ 🤩\}$
+
 [<img src= "./screenshots/ios.png" width="200">]()
 [<img src= "./screenshots/android.png" width="200">]()
 
