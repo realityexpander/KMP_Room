@@ -10,7 +10,7 @@ How to use Google Room database (loved by Android devs) in Pure Compose UI KMP a
 [<img src= "./screenshots/ios.png" width="200">]()
 [<img src= "./screenshots/android.png" width="200">]()
 
-Youtube Video exmplainer:
+Youtube Video explainer:
 
 [<img src="https://github.com/realityexpander/KMP_Room/assets/5157474/5ff980a9-11c5-4d9e-9546-745ccb0006d7">](https://youtu.be/2E-3FDRPmYI)
 
